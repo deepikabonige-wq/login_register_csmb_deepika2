@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dns = requrie("dns")
+const dns = require("dns")
 dns.setServers(["8.8.8.8","8.8.4.4"])
 
 const connectDB = async () => {
