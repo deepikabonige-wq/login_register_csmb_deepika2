@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
+const dns = require("dns")
+
+dns.setServers(["8.8.8.8","8.8.4.4"])
+
 const connectDB = async () => {
   try {
   
-    const connString = "mongodb://localhost:27017/workshop_db";
+    const connString = 'mongodb+srv://KulsumShaik24_db_user:<kulsum20>@cluster0.nxftcfq.mongodb.net/kulsum?appname=cluster0';
     
     await mongoose.connect(connString);
     console.log('MongoDB connected successfully to LOCALHOST!');
